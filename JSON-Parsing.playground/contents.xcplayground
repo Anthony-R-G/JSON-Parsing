@@ -3,5 +3,6 @@
     <pages>
         <page name='Parsing-Dictionary'/>
         <page name='Parsing-Array'/>
+        <page name='Parsing-Multiple-Keys'/>
     </pages>
 </playground>
