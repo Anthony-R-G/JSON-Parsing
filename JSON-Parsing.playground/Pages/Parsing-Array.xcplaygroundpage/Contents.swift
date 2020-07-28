@@ -1,6 +1,6 @@
 import Foundation
 
-//JSON data
+//Parsing JSON with an array top-level
 
 let json = """
 [
