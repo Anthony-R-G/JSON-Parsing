@@ -35,7 +35,6 @@ struct Contact: Decodable {
     let lastName: String
 }
 
-
 //===========================================
 //Decode the JSON data to our Swift model
 //===========================================
@@ -47,3 +46,15 @@ do {
 } catch {
     print("Decoding error: \(error)")
 }
+
+/* Result:
+ ▿ 2 elements
+ ▿ __lldb_expr_3.Contact
+   - firstName: "John"
+   - lastName: "Appleseed"
+ ▿ __lldb_expr_3.Contact
+   - firstName: "Anthony"
+   - lastName: "Gonzalez"
+ */
+
+
