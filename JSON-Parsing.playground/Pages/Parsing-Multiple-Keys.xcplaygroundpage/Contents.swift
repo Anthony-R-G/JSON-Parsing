@@ -2,7 +2,7 @@ import Foundation
 
 //Parsing JSON with multiple keys
 
-let json = """
+let jsonData = """
 {
     "Afpak": {
         "id": 1,
@@ -108,7 +108,7 @@ struct Strain: Decodable {
 }
 
 do {
-    let dictionary = try JSONDecoder().decode([String: Strain].self, from: json)
+    let dictionary = try JSONDecoder().decode([String: Strain].self, from: jsonData)
     //Use a for-loop to create [Strain] or use map {}
     var strains: [Strain] = []
     for (_, val) in dictionary {

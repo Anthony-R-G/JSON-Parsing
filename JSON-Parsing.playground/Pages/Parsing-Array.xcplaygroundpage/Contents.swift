@@ -2,7 +2,7 @@ import Foundation
 
 //Parsing JSON with an array top-level
 
-let json = """
+let jsonData = """
 [
     {
         "title": "New York",
@@ -44,7 +44,7 @@ struct City: Decodable {
 //Decode the data to Swift model
 //===========================================
 do {
-    let weatherArray = try JSONDecoder().decode([City].self, from: json)
+    let weatherArray = try JSONDecoder().decode([City].self, from: jsonData)
     dump(weatherArray)
 } catch {
     print("Decoding error: \(error)")

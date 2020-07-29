@@ -2,7 +2,7 @@ import Foundation
 
 //Parsing JSON with a dictionary top-level
 
-let json = """
+let jsonData = """
 {
  "results": [
    {
@@ -40,7 +40,7 @@ struct Contact: Decodable {
 //===========================================
 
 do {
-    let dictionary = try JSONDecoder().decode(ResultsWrapper.self, from: json)
+    let dictionary = try JSONDecoder().decode(ResultsWrapper.self, from: jsonData)
     let contacts = dictionary.results
     dump(contacts)
 } catch {
